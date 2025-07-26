@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sylviachangtw's Automation Portfolio</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #09b4ce;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #17cbc5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .card a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>XiaoWei's Automation Portfolio</h1>
+    <p>展示我使用 VBA、Power Platform、Python 和 ChatGPT 建立的自動化與 AI 工具<br/>Showcasing automation & AI tools built with VBA, Power Platform, Python, and ChatGPT</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h3>VBA 合約與風控管理 / Contract & Risk Management (VBA)</h3>
+      <p>使用 VBA 自訂資料結構，將直式（欄A為標題）的資料匯入橫式大表，處理多筆輸入與欄位名稱對應困難的狀況。<br/>Used VBA to define custom data structures and import vertical data (titles in column A) into a horizontal master table, solving unmatched field name issues and supporting batch imports.</p>
+      <p><strong>技術 / Tech：</strong>VBA、Excel</p>
+      <a href="vba-contract-importer.html">查看更多 / View more</a>
+    </div>
+
+    <div class="card">
+      <h3>欄位整理工具 / Column Organizer (VBA)</h3>
+      <p>依據標題名稱，動態取得欄位位置並依指定順序匯出新表，解決不同人匯出的資料順序不一的問題。<br/>Dynamically locate and reorder fields based on title names, resolving inconsistent column orders in exported reports.</p>
+      <p><strong>技術 / Tech：</strong>VBA、Excel</p>
+      <a href="vba-column-organizer.html">查看更多 / View more</a>
+    </div>
+
+    <div class="card">
+      <h3>抵銷資料清理 / Offset Pair Cleaner (VBA)</h3>
+      <p>根據多條件篩選，自動標記可抵銷的正負數資料，供人工確認後一鍵刪除。<br/>Auto-detect offsetting positive and negative entries using multi-criteria filters and mark them for one-click removal.</p>
+      <p><strong>技術 / Tech：</strong>VBA、Excel</p>
+      <a href="vba-offset-cleaner.html">查看更多 / View more</a>
+    </div>
+
+    <div class="card">
+      <h3>帳單流程自動化 / Billing Automation Flow</h3>
+      <p>從系統通知信擷取資訊，自動寫入總表並透過 PowerApps 呈現與串接申請紀錄。<br/>Extract data from billing notification emails, auto-fill master sheet, and display records via PowerApps.</p>
+      <p><strong>技術 / Tech：</strong>Power Automate、Power Apps</p>
+      <a href="power-bill-flow.html">查看更多 / View more</a>
+    </div>
+
+    <div class="card">
+      <h3>工時打卡 App / Time Tracking (PowerApps)</h3>
+      <p>簡易介面供員工快速打卡 Check-in/out，便於每日工時記錄與查詢。<br/>Simple PowerApps interface for employees to clock in/out and record daily working hours.</p>
+      <p><strong>技術 / Tech：</strong>Power Apps</p>
+      <a href="powerapps-checkin.html">查看更多 / View more</a>
+    </div>
+
+    <div class="card">
+      <h3>Planner 任務自動化 / Bulk Task Generator</h3>
+      <p>透過 Power Automate 批次建立 Planner 任務、設定負責人、貯體及期限。<br/>Automate creation of Planner tasks in bulk with assignees, buckets, and due dates.</p>
+      <p><strong>技術 / Tech：</strong>Power Automate、Microsoft Planner</p>
+      <a href="planner-task-generator.html">查看更多 / View more</a>
+    </div>
+
+    <div class="card">
+      <h3>語言學習助手 / Language Learning Bot</h3>
+      <p>整合 Line Bot 與 ChatGPT 提供語言學習回饋與互動練習。<br/>Line Bot + ChatGPT-based assistant offering interactive language learning feedback and practice.</p>
+      <p><strong>技術 / Tech：</strong>Python、Flask、OpenAI API、LINE Messaging API</p>
+      <a href="linebot-learning-assistant.html">查看更多 / View more</a>
+    </div>
+
+    <div class="card">
+      <h3>合約條款比對工具 / Contract Clause Comparator</h3>
+      <p>結合 Python 與 ChatGPT 分析合約條文異同，提示權利義務變化與風險評估。<br/>Hackathon project using Python & ChatGPT to compare contract clauses and highlight risk-impacting changes.</p>
+      <p><strong>技術 / Tech：</strong>Python、OpenAI API、Flask</p>
+      <a href="clause-compare-ai.html">查看更多 / View more</a>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Hsiao-Wei Chang ｜ GitHub: <a href="https://github.com/sylviachangtw" target="_blank">sylviachangtw</a>
+  </footer>
+</body>
+</html>
